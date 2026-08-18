@@ -24,38 +24,32 @@
 
     <main>
     <div class="hero-card">
-        <h2>منصة AdGenix لتوليد المحتوى بالذكاء الاصطناعي</h2>
+        <h2>منصة AdGenix للذكاء الاصطناعي</h2>
         <p>أدخل اسم منتجك أو فكرتك، واترك الباقي لخوارزمياتنا المتقدمة لتوليد أفضل محتوى تسويقي.</p>
 
-        <!-- حقول الإدخال التي يقرأها JavaScript -->
-        <div style="margin-bottom: 20px; text-align: right;">
-            <label style="display: block; margin-bottom: 5px; color: #94a3b8;">اسم المنتج أو الفكرة:</label>
-            <input type="text" id="productName" placeholder="مثال: ساعة ذكية رياضية" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; color: white; box-sizing: border-box;">
+        <div class="input-group">
+            <label>اسم المنتج أو الفكرة:</label>
+            <input type="text" id="productName" placeholder="مثال: ساعة ذكية رياضية">
         </div>
 
-        <div style="margin-bottom: 20px; text-align: right;">
-            <label style="display: block; margin-bottom: 5px; color: #94a3b8;">نوع المحتوى:</label>
-            <select id="contentType" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; color: white; box-sizing: border-box;">
+        <div class="input-group">
+            <label>نوع المحتوى المطلوبة:</label>
+            <select id="contentType">
                 <option value="description">وصف تسويقي احترافي</option>
                 <option value="social">منشورات سوشيال ميديا</option>
                 <option value="ads">أفكار حملات إعلانية</option>
             </select>
         </div>
 
-        <!-- مخفي مؤقتاً لتجنب أي نقص، أو يمكن تركه -->
         <input type="hidden" id="toneStyle" value="professional">
 
-        <button class="btn-primary" onclick="generateContent()" style="width: 100%; margin-bottom: 15px;">توليد المحتوى الآن 🚀</button>
+        <button class="btn-primary" onclick="generateContent()">توليد المحتوى الآن 🚀</button>
 
-        <!-- صندوق النتائج -->
-        <div id="output" style="background: #0f172a; padding: 15px; border-radius: 8px; border: 1px solid #334155; text-align: right; min-height: 50px; color: #f8fafc; white-space: pre-wrap; margin-bottom: 15px; font-size: 14px;">
-            ستظهر النتيجة هنا بعد التوليد...
-        </div>
+        <div id="output">ستظهر النتيجة هنا بعد التوليد...</div>
 
-        <!-- أزرار إضافية للنسخ والاشتراك -->
-        <div style="display: flex; gap: 10px;">
-            <button onclick="copyText()" style="flex: 1; padding: 10px; background: #334155; color: white; border: none; border-radius: 8px; cursor: pointer;">نسخ المحتوى 📋</button>
-            <button onclick="openCheckout()" style="flex: 1; padding: 10px; background: #10b981; color: white; border: none; border-radius: 8px; cursor: pointer;">اشتراك مدفوع 💳</button>
+        <div class="action-buttons">
+            <button class="btn-secondary" onclick="copyText()">نسخ المحتوى 📋</button>
+            <button class="btn-secondary btn-success" onclick="openCheckout()">اشتراك مدفوع 💳</button>
         </div>
     </div>
 </main>
