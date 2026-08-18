@@ -1,42 +1,99 @@
 :root {
   --primary: #6366f1;
+  --primary-hover: #4f46e5;
   --bg-color: #0f172a;
   --card-bg: #1e293b;
   --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --border: #334155;
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--bg-color);
   color: var(--text-main);
   margin: 0;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
 }
 
+header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+header h1 {
+  background: linear-gradient(45deg, #6366f1, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 28px;
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .hero-card {
   background: var(--card-bg);
-  padding: 40px;
+  border: 1px solid var(--border);
   border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* يترك مسافة متساوية تلقائياً بين كل عنصر ولا يجعلها تتداخل */
+}
+
+.hero-card h2 {
+  font-size: 22px;
+  margin: 0;
   text-align: center;
-  width: 90%;
-  max-width: 600px;
-  margin-top: 50px;
 }
 
 .hero-card p {
-  line-height: 1.6;
-  margin: 20px 0;
-  word-wrap: break-word; /* هذا يمنع النص من الخروج عن حدود الصندوق */
+  color: var(--text-muted);
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-color);
+  color: var(--text-main);
+  box-sizing: border-box;
 }
 
 .btn-primary {
   background: var(--primary);
   color: white;
   border: none;
-  padding: 12px 25px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
   border-radius: 8px;
   cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background: var(--primary-hover);
+}
+
+footer {
+  text-align: center;
+  color: var(--text-muted);
+  margin-top: 30px;
+  font-size: 13px;
 }
