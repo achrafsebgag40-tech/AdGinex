@@ -1,97 +1,42 @@
 :root {
   --primary: #6366f1;
-  --primary-hover: #4f46e5;
   --bg-color: #0f172a;
   --card-bg: #1e293b;
   --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --border: #334155;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: sans-serif;
   background-color: var(--bg-color);
   color: var(--text-main);
   margin: 0;
-  padding: 0;
-  direction: rtl;
-}
-
-header {
-  background: rgba(30, 41, 59, 0.8);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border);
-  padding: 20px;
-  text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 24px;
-  color: var(--text-main);
-  background: linear-gradient(45deg, #6366f1, #a855f7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-main {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .hero-card {
   background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: 16px;
   padding: 40px;
+  border-radius: 16px;
   text-align: center;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
-}
-
-.hero-card h2 {
-  font-size: 28px;
-  margin-bottom: 15px;
+  width: 90%;
+  max-width: 600px;
+  margin-top: 50px;
 }
 
 .hero-card p {
-  color: var(--text-muted);
-  font-size: 16px;
   line-height: 1.6;
-  margin-bottom: 30px;
+  margin: 20px 0;
+  word-wrap: break-word; /* هذا يمنع النص من الخروج عن حدود الصندوق */
 }
 
 .btn-primary {
   background: var(--primary);
   color: white;
   border: none;
-  padding: 12px 30px;
-  font-size: 16px;
-  font-weight: bold;
+  padding: 12px 25px;
   border-radius: 8px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
-}
-
-.btn-primary:hover {
-  background: var(--primary-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.6);
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  color: var(--text-muted);
-  border-top: 1px solid var(--border);
-  margin-top: 60px;
-  font-size: 14px;
 }
