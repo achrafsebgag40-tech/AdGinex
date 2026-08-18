@@ -3,65 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>AdGenix - المنصة الرقمية الاحترافية</title>
 
-    <meta name="description" content="منصة AdGenix لتوليد المحتوى التسويقي والإعلاني بالذكاء الاصطناعي بضغطة زر واحدة. أنشئ إعلانات ممولة ووصف منتجات احترافي بسهولة.">
-    <meta name="keywords" content="توليد محتوى تسويقي, إعلانات ممولة, وصف منتجات, ذكاء اصطناعي, AdGenix">
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="google-site-verification" content="AJTIkD27075KnjvUxF7XXKtVX1X8WC_kBGRtKO_ftWY" />
-    <title>AdGenix | المنصة الذكية لتوليد المحتوى التسويقي</title>
     <!-- SEO & Open Graph Tags -->
-<meta name="description" content="AdGenix - المنصة الاحترافية للخدمات والأدوات الرقمية المتميزة.">
-<meta name="keywords" content="AdGenix, أدوات رقمية, تطوير ويب, تقنية">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://ad-ginex.vercel.app/">
-<meta property="og:title" content="AdGenix - موقعك الرقمي الاحترافي">
-<meta property="og:description" content="منصة متقدمة تقدم لك خدمات وأدوات رقمية فريدة من نوعها.">
+    <meta name="description" content="AdGenix - المنصة الاحترافية للخدمات والأدوات الرقمية المتميزة.">
+    <meta name="keywords" content="AdGenix, أدوات رقمية, تطوير ويب, تقنية">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ad-ginex.vercel.app/">
+    <meta property="og:title" content="AdGenix - موقعك الرقمي الاحترافي">
+    <meta property="og:description" content="منصة متقدمة تقدم لك خدمات وأدوات رقمية فريدة من نوعها.">
+
+    <!-- ربط ملف التنسيق الخارجي -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <div class="logo">⚡ AdGenix AI</div>
-        <button class="pro-btn" onclick="openCheckout()">ترقية للباقة الاحترافية ($29/mo)</button>
+        <h1>AdGenix</h1>
     </header>
 
-    <div class="container">
-        <h1>منصة AdGenix لتوليد المحتوى التسويقي</h1>
-        <p class="subtitle">أنشئ أوصافاً تسويقية مذهلة، إعلانات ممولة، ومنشورات تفاعلية لمنصات التواصل الاجتماعي بضغطة زر واحدة.</p>
-        
-        <div class="form-group">
-            <label for="productName">اسم المنتج أو فكرته الأساسية:</label>
-            <input type="text" id="productName" placeholder="مثال: سماعات لاسلكية عازلة للضوضاء بطارية تدوم طويلاً">
+    <main>
+        <div class="hero-card">
+            <h2>مرحباً بك في عالم الاحترافية</h2>
+            <p>نحن نعمل على تقديم أفضل الحلول والأدوات الرقمية المصممة بعناية لتلبية احتياجاتك بأعلى جودة وسرعة ممكنة.</p>
+            <button class="btn-primary" onclick="alert('أهلاً بك! الموقع يعمل بكفاءة واحترافية تامة.')">استكشف الخدمات</button>
         </div>
+    </main>
 
-        <div class="form-grid">
-            <div class="form-group" style="margin-bottom: 0;">
-                <label for="contentType">نوع المحتوى المطلوب:</label>
-                <select id="contentType">
-                    <option value="description">وصف تسويقي احترافي لمتجر إلكتروني</option>
-                    <option value="social">منشورات وسائل التواصل الاجتماعي (تيك توك / انستغرام)</option>
-                    <option value="ads">أفكار إعلانات ممولة قصيرة وجذابة</option>
-                </select>
-            </div>
-            <div class="form-group" style="margin-bottom: 0;">
-                <label for="toneStyle">نبرة الخطاب (Tone):</label>
-                <select id="toneStyle">
-                    <option value="persuasive">تسويقي محفز للشراء</option>
-                    <option value="professional">رسمي واحترافي</option>
-                    <option value="excited">حماسي وجذاب</option>
-                </select>
-            </div>
-        </div>
+    <footer>
+        <p>جميع حقوق الملكية محفوظة &copy; 2026 AdGenix</p>
+    </footer>
 
-        <button class="generate-btn" onclick="generateContent()" style="margin-top: 20px;">توليد المحتوى بالذكاء الاصطناعي ⚡</button>
-
-        <div class="output-container">
-            <button class="copy-btn" onclick="copyText()">نسخ النص 📋</button>
-            <div class="output-box" id="output">
-                ستظهر النتائج الاحترافية المولدة هنا فوراً...
-            </div>
-        </div>
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>
